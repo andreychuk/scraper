@@ -1,0 +1,17 @@
+{
+  "name": "scraper",
+  "version": "0.0.1",
+  "description": "Scraper ready to use to integrate in your project",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx ts-node  src/main.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "puppeteer": "^19.7.3"
+  },
+  "dependencies": {
+    "yaml": "^2.3.3"
+  }
+}

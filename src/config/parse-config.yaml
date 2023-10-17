@@ -1,0 +1,20 @@
+base_url: https://www.homes.com
+search_url: /duvall-wa/
+search:
+  items:
+    selector_all: .for-sale-content-container
+    fields: [{ selector: a, attribute: href, name: url }]
+single_page:
+  items:
+    fields:
+      [
+        {
+          selector_all: ".property-info-address-citystatezip a",
+          name: address,
+        },
+        { selector: "#price", name: price },
+        { selector: .property-info-address-main, name: address_main },
+        { selector: .ldp-description-text, name: description },
+        { selector: .property-estimated-info, name: estimated_payment },
+        { selector: .primary-carousel-slide-img, name: image, attribute: src },
+      ]
